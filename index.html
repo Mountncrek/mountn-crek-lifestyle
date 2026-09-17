@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mount’n Crek Lifestyle | Live Your Dreams</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo">Mount’n Crek <span>Lifestyle</span></a>
+
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#lifestyle">Lifestyle</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow">EST. 2026</p>
+    <h1>Live Your Dreams.</h1>
+    <p class="hero-text">
+      Adventure. Family. Freedom. The Mount’n Crek Lifestyle is about getting outside,
+      making memories, and living life your way.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#lifestyle" class="btn btn-primary">Explore the Lifestyle</a>
+      <a href="#contact" class="btn btn-secondary">Join the Journey</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container two-column">
+    <div>
+      <p class="section-label">OUR STORY</p>
+      <h2>Live More. Explore More.</h2>
+    </div>
+
+    <div>
+      <p>
+        Mount’n Crek Lifestyle was created for people who believe the best memories
+        happen outside. From mountain adventures and creek days to campfires,
+        family time, and the freedom to chase your dreams.
+      </p>
+
+      <p>
+        This is more than a brand. It’s a lifestyle.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="lifestyle" class="section dark-section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">THE LIFESTYLE</p>
+      <h2>Find Your Adventure</h2>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-image adventure"></div>
+        <div class="card-content">
+          <h3>Adventure</h3>
+          <p>Take the road less traveled and find something worth remembering.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image camp"></div>
+        <div class="card-content">
+          <h3>Camp Life</h3>
+          <p>Good people, open skies, campfires, and stories that last forever.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image creek"></div>
+        <div class="card-content">
+          <h3>Creek Days</h3>
+          <p>Slow down, get outside, and enjoy the simple things in life.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">MOUNTAIN • CREEK • LIFE</p>
+      <h2>Our World</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-one">Adventure</div>
+      <div class="gallery-item gallery-two">Camp Life</div>
+      <div class="gallery-item gallery-three">Creek Days</div>
+      <div class="gallery-item gallery-four">Family</div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="section dark-section">
+  <div class="container shop-section">
+    <p class="section-label">COMING SOON</p>
+    <h2>Wear the Lifestyle.</h2>
+    <p>
+      Mount’n Crek Lifestyle apparel, hats, pins, and gear are coming soon.
+    </p>
+    <a href="#contact" class="btn btn-primary">Stay Updated</a>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-section">
+    <div>
+      <p class="section-label">GET IN TOUCH</p>
+      <h2>Join the Journey.</h2>
+      <p>
+        Have an idea, want to collaborate, or just want to be part of the
+        Mount’n Crek Lifestyle? Send us a message.
+      </p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>Mount’n Crek Lifestyle</strong>
+      <p>Live Your Dreams.</p>
+    </div>
+
+    <p>© 2026 Mount’n Crek Lifestyle. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

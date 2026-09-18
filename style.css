@@ -404,3 +404,12 @@ h2 {
     font-size: 3.5rem;
   }
 }
+/* Mount'n Crek logo size fix */
+.brand img {
+  width: 52px !important;
+  height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  object-fit: contain;
+  display: block;
+}

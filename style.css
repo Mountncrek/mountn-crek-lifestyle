@@ -425,3 +425,10 @@ img[src="logo.png"] {
   max-width: 52px !important;
   max-height: 52px !important;
 }
+/* Gallery photo sizing */
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
